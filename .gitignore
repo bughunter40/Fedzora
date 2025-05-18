@@ -1,0 +1,113 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Training and Model files
+visualizations/
+models/
+*.h5
+*.pth
+*.ckpt
+*.pb
+*.onnx
+*.mlmodel
+*.savedmodel
+logs/
+runs/
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+
+# Distribution
+.Python
+*.manifest
+*.spec
+
+# System
+.DS_Store
+Thumbs.db
+*.log
+
+# Project specific
+privacy_metrics/
+training_history/
+*.config
+config.local.yaml
+
+# Data files and directories
+data/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.json
+*.parquet
+*.feather
+*.pickle
+*.pkl
+*.npy
+*.npz
+*.hdf5
+*.h5
+*.mat
+*.zip
+*.gz
+*.tar
+*.7z
+*.rar
+
+# Temporary data files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Data backups
+backups/
+*.bak
+*.backup

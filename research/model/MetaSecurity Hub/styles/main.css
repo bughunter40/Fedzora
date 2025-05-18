@@ -1,0 +1,72 @@
+/* Main Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* AI Assistant Interface */
+.ai-interface {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(0, 17, 51, 0.9);
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 15px;
+    color: #00ff00;
+    font-size: 14px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.ai-message {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Loading Indicators */
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00ff00;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Network Visualization */
+.network-node {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #00ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Threat Alert Styles */
+.threat-alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.threat-alert.active {
+    display: block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

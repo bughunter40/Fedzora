@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaSecurity Hub - 3D SOC</title>
+    <script src="/node_modules/aframe/dist/aframe-master.min.js"></script>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <a-scene>
+        <!-- Environment -->
+        <a-sky color="#001133"></a-sky>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="30" height="30" color="#112244"></a-plane>
+
+        <!-- SOC Room Structure -->
+        <a-entity id="soc-room">
+            <!-- Main Display Wall -->
+            <a-entity position="0 2.5 -5">
+                <a-plane width="8" height="4" color="#001122" metalness="0.5" roughness="0.5">
+                    <a-text value="SOC Dashboard" position="0 1.7 0.1" scale="2 2 2" align="center" color="#00ff00"></a-text>
+                </a-plane>
+            </a-entity>
+
+            <!-- Control Stations -->
+            <a-entity id="control-stations" position="0 0 0">
+                <a-cylinder position="-2 0.5 -2" radius="0.5" height="1" color="#334455"></a-cylinder>
+                <a-cylinder position="2 0.5 -2" radius="0.5" height="1" color="#334455"></a-cylinder>
+            </a-entity>
+
+            <!-- AI Avatar Patrol Path -->
+            <a-entity id="patrol-path" position="0 0.1 0">
+                <a-torus-knot radius="4" radius-tubular="0.1" segments-tubular="100" color="#00ff00" opacity="0.2"></a-torus-knot>
+            </a-entity>
+        </a-entity>
+
+        <!-- Camera Rig -->
+        <a-entity position="0 1.6 5">
+            <a-camera look-controls wasd-controls></a-camera>
+        </a-entity>
+    </a-scene>
+
+    <div id="ai-assistant" class="ai-interface">
+        <div class="ai-message">Welcome to MetaSecurity Hub SOC</div>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
